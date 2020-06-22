@@ -12,6 +12,6 @@ module.exports = {
                 .setDescription("You don't have the permission **ADMINISTRATOR** to use this command.");
             return await message.channel.send(embed);
         }
-        message.channel.send("@Staff lol ur bad xd xd xd")
+        message.channel.send("<@&724710641499242516> lol ur bad xd xd xd")
     }
 };
