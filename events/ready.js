@@ -13,6 +13,7 @@ function setData() {
         let boosterCount = guild.premiumSubscriptionCount
         guild.channels.get("709793993852190740").setName("Server Members: " + memberCount)
         guild.channels.get("709794564004904960").setName("Server Boosts: " + boosterCount)
+    console.log(guild);
     }
     setInterval(setData, 60000);
 };
