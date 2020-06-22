@@ -7,10 +7,10 @@ module.exports = (client) => {
             type: "PLAYING"
         }
     })  
-        function setData() {
-        let guild = client.guilds.find("684121060916068393")
-        let memberCount = guild.members.size()
-        guild.channels.find("709793993852190740").setName("Members: " + memberCount)
+function setData() {
+        let guild = client.guilds.get("684121060916068393")
+        let memberCount = guild.memberCount
+        guild.channels.get("709793993852190740").setName("some shit: " + memberCount)
     }
-    setInterval(setData, 60000);
+    setInterval(setData, 10000);
 };
