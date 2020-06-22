@@ -12,5 +12,5 @@ function setData() {
         let memberCount = guild.memberCount
         guild.channels.get("709793993852190740").setName("Server Members: " + memberCount)
     }
-    setInterval(setData, 10000);
+    setInterval(setData, 60000);
 };
