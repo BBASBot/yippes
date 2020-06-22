@@ -13,7 +13,7 @@ module.exports = {
             return await message.channel.send(embed);
         }
         if (args.length < 1) {
-            return message.channel.send("Usage: !kick <@member> <reason>");
+            return message.channel.send("Usage: b.kick <@member> <reason>");
         }
 
         let kickMember = message.mentions.members.first();
