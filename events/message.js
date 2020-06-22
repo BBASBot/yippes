@@ -1,5 +1,5 @@
 module.exports = async (client, message) => {
-    const prefix = "!";
+    const prefix = "b.";
 
     if (message.author.bot) return;
     if (!message.guild) return;
