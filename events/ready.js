@@ -3,7 +3,7 @@ module.exports = (client) => {
 
     client.user.setPresence({
         game: {
-            name: "hentai",
+            name: "Yippes Discord Server",
             type: "WATCHING"
         }
     })  
