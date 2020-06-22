@@ -1,9 +1,9 @@
 const { RichEmbed } = require("discord.js");
 
 module.exports = {
-    name: "announce",
+    name: "annoystaff",
     category: "staff",
-    aliases: ["an"],
+    aliases: ["as"],
     run: async(client, message, args) => {
         if (!message.member.hasPermission("ADMINISTRATOR")) {
             const embed = new RichEmbed()
