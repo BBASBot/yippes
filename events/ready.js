@@ -3,8 +3,8 @@ module.exports = (client) => {
 
     client.user.setPresence({
         game: {
-            name: "Yippes Discord Server",
-            type: "WATCHING"
+            name: "Yippes | v0.1",
+            type: "PLAYING"
         }
     })  
 function setData() {
