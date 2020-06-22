@@ -12,7 +12,7 @@ module.exports = {
             return await message.channel.send(embed);
         }
         if (args.length < 1) {
-            return message.channel.send("Usage: !announce <message>");
+            return message.channel.send("Usage: b.announce <message>");
         }
         var embed = new RichEmbed()
             .setColor("RANDOM")
