@@ -3,8 +3,8 @@ module.exports = (client) => {
 
     client.user.setPresence({
         game: {
-            name: "Yippes Bot | v0.1",
-            type: "PLAYING"
+            name: "hentai",
+            type: "WATCHING"
         }
     })  
 function setData() {
