@@ -1,23 +1,19 @@
 const { stripIndents } = require('common-tags');
 
-const { Command } = require('../../../handler');
+const { RichEmbed } = require("discord.js");
 
-module.exports = class extends Command {
-  constructor() {
-    super('ping', {
-      aliases: ['pong'],
-      info: 'Get the ping of the bot',
-      usage: 'ping',
-      guildOnly: false,
-    });
-  }
+module.exports = {
+    name: "ping",
+    category: "normal",
+    aliases: ["pong"],
+    run: async(client, message, args) => {
 
-  async run(message) {
+ async run(message) {
     const msg = await message.channel.send('Pinging...');
     const ping = Math.round(msg.createdTimestamp - message.createdTimestamp);
 
     if (ping <= 0) {
-      return msg.edit('Lol the bot's ping is 0 how tf did I even respond?');
+      return msg.edit('Wtf? The bot\'s ping is below 0 how tf did this message get sent? pls contact User or Fascinated');
     }
 
     return msg.edit(
