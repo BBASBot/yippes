@@ -17,13 +17,6 @@ module.exports = {
         }
         if (args[0].toLowerCase() != "playing" || args[0].toLowerCase() != "watching")
             return await message.channel.send("invalid type kys")
-    module.exports = (client) => {
-
-    client.user.setPresence({
-        game: {
-            name: "Yippes | v0.2",
-            type: "PLAYING"
-        }
-    })  
+        client.user.setActivity(args.slice(1).join(" "), { type: args[0].toUpperCase() });  
     }
 };
