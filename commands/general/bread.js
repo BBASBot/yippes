@@ -5,6 +5,6 @@ module.exports = {
     category: "general",
     description: "BREAD BREAD BREAD BREAD AAAAAAAAAA",
     run: async(client, message, args) => {
-        const msg = await message.channel.send("MMM I LOVE :bread:\n:bread:\n:bread:");
+        const msg = await message.channel.send(":bread:\n:bread:\n:bread:");
     }
 };
