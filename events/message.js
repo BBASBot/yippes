@@ -15,3 +15,18 @@ module.exports = async (client, message) => {
     if (command) command.run(client, message, args);
     return;
 }
+const usedCommand = new Set();
+
+module.exports.run = async (bot, message, args) => {
+    if(usedCommand.has(message.author.id)){
+        message.reply('Chill bro, ur on cooldown!')
+    } else {
+        message.reply('ur free from cooldown my bruhdah')
+        
+        
+        usedCommand.add(message.author.id);
+        setTimeout(() => {
+            usedCommand.delete(message.author.id);
+        }, 5000); 
+    }
+}
