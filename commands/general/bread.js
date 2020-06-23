@@ -1,10 +1,18 @@
+const { RichEmbed } = require("discord.js");
 const usedCommand = new Set();
 
 module.exports.run = async (bot, message, args) => {
     if(usedCommand.has(message.author.id)){
         message.reply('Chill bro, ur on cooldown!')
     } else {
-        message.reply('ur free from cooldown my bruhdah')
+        module.exports = {
+    name: "bread",
+    category: "general",
+    description: "BREAD BREAD BREAD BREAD AAAAAAAAAA",
+    run: async(client, message, args) => {
+        const msg = await message.channel.send(":bread:\n:bread:\n:bread:");
+    }
+};
         
         
         usedCommand.add(message.author.id);
@@ -13,14 +21,3 @@ module.exports.run = async (bot, message, args) => {
         }, 5000); 
     }
 }
-
-const { RichEmbed } = require("discord.js");
-
-module.exports = {
-    name: "bread",
-    category: "general",
-    description: "BREAD BREAD BREAD BREAD AAAAAAAAAA",
-    run: async(client, message, args) => {
-        const msg = await message.channel.send(":bread:\n:bread:\n:bread:");
-    }
-};
