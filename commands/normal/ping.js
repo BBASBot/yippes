@@ -1,4 +1,4 @@
-const { stripIndents } = require('common-tags');
+//const { stripIndents } = require('common-tags');
 
 const { RichEmbed } = require("discord.js");
 
@@ -17,10 +17,10 @@ module.exports = {
     }
 
     return msg.edit(
-      stripIndents`
+      ```
       🏓 P${'o'.repeat(Math.ceil(ping / 100))}ng: \`${ping}ms\`
       💓 Heartbeat: \`${Math.round(message.client.ping)}ms\`
-      `,
+      ```,
     );
   }
 };
