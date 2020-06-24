@@ -8,7 +8,7 @@ module.exports = {
             const embed = new RichEmbed()
                 .setColor("RANDOM")
                 .setTitle("Help")
-                .setDescription("**Categories:** general, staff");
+                .setDescription("**Categories:** general, fun, economy, moderation, settings, staff");
             return await message.channel.send(embed)
         }
         let commands = "";
