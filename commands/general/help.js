@@ -8,18 +8,16 @@ module.exports = {
             const embed = new RichEmbed()
                 .setColor("RANDOM")
                 .setTitle("Help")
-                .setDescription("**Categories:** general, fun, economy, moderation, settings, staff");
+                .setDescription("**Categories:** general, staff");
             return await message.channel.send(embed)
         }
         let commands = "";
-        const guildShit = await client.getGuild(message.guild);
-        const prefix = guildShit.prefix;
 
         let ran = false;
         client.commands.forEach(element => {
             if (element.category === args[0]) {
                 console.log(element.name);
-                commands = commands + "`" + prefix + element.name + "` | ";
+                commands = commands + "`" + "b." + element.name + "` | ";
                 ran = true;
             }
         });
