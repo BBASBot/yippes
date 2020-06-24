@@ -25,7 +25,7 @@ module.exports = {
             const embed = new RichEmbed()
                 .setColor("RED")
                 .setTitle(":x: Error")
-                .setDescription("Category not found.");
+                .setDescription("that category doesn't exist you fucking retard");
             return await message.channel.send(embed)
         }
         const embed = new RichEmbed()
