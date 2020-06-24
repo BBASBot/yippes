@@ -3,7 +3,7 @@ module.exports = (client) => {
 
     client.user.setPresence({
         game: {
-            name: "Yippes | v0.3",
+            name: "Yippes | v0.4",
             type: "PLAYING"
         }
     })  
